@@ -1,0 +1,13 @@
+git init
+git add .
+git commit -m "yourname"
+git remote add origin https://github.com/songw9s8x7/menu.git
+git push -u origin master
+
+
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/songw9s8x7/menu2.git
+git push -u origin master

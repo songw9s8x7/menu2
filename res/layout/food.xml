@@ -1,0 +1,62 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+    	<CheckBox
+        	android:id="@+id/checkBox1"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+       		android:text="番茄炒蛋          " />
+    	<TextView 
+    	    android:id="@+id/price1"
+    	    android:text="10" />
+
+    	<TextView
+  
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="元" />
+		
+    	</TableRow>
+           <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+    	<CheckBox
+        	android:id="@+id/checkBox2"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+       		android:text="韭菜炒蛋          " />
+    	<TextView 
+    	    android:id="@+id/price2"
+    	    android:text="10" />
+
+    	<TextView
+
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="元" />
+		
+    	</TableRow>
+
+    	<Button
+        	android:id="@+id/button1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:layout_gravity="center"
+        	android:text="点餐完毕" />
+    </TableLayout>
+</LinearLayout>
+</ScrollView>
