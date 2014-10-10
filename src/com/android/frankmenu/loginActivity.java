@@ -36,7 +36,10 @@ finished.setOnClickListener(new View.OnClickListener() {
 				String addr = userInfo.getString("addr", "");
 				name = user_name.getText().toString();
 				addr = user_addr.getText().toString();
-			
+				userInfo.edit().putString("name", name);
+				userInfo.edit().putString("addr", addr);
+				name = userInfo.getString("name", "");
+				addr = userInfo.getString("addr", "");
 			}
 		});
 	}
