@@ -1,6 +1,7 @@
 package com.android.frankmenu;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +17,7 @@ public class MenuActivity extends Activity{
 	private Button sendbutton;
 	private SelecedMenu selecedmenu[];
 	private Message msg;
-	private String addr;
+	private String user_info;
 	private String output;
 	private TextView price[];
 	private int number;
@@ -59,6 +60,12 @@ public class MenuActivity extends Activity{
         	 }
          }
      }; 
+	private void get_user_data(){
+		SharedPreferences userInfo = getSharedPreferences("user_infos", 0);
+		String name = userInfo.getString("name","");
+		String addr = userInfo.getString("addr","");
+		user_info = name + addr;
+	}
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -69,12 +76,12 @@ public class MenuActivity extends Activity{
 		   price = new TextView[100];
 		   context = this;
 		   initView();
-		   addr = "用户地址信息 ";
+		   get_user_data();
 		   number = 0;
 		   selecedmenu[0] = new SelecedMenu();
 		   selecedmenu[1] = new SelecedMenu();
 		   msg = new Message("13141048947");
-		 
+		   get_user_data();
 		   sendbutton.setOnClickListener(new View.OnClickListener(){
 
 			@Override
@@ -86,7 +93,7 @@ public class MenuActivity extends Activity{
 					toast.show(); //请选择菜品
 				}
 				else{
-					output = addr + selecedmenu[0].toString() + selecedmenu[1].toString();
+					output = user_info + selecedmenu[0].toString() + selecedmenu[1].toString();
 					Toast toast = Toast.makeText(getApplicationContext(),
 							output, Toast.LENGTH_SHORT); 
 					toast.show(); 
