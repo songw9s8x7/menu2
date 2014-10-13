@@ -17,10 +17,10 @@
         	android:id="@+id/checkBox1"
         	android:layout_width="match_parent"
         	android:layout_height="wrap_content"
-       		android:text="番茄炒蛋          " />
+       		android:text="洋葱炒肉片盖浇饭" />
     	<TextView 
     	    android:id="@+id/price1"
-    	    android:text="10" />
+    	    android:text="12" />
 
     	<TextView
   
@@ -37,7 +37,7 @@
         	android:id="@+id/checkBox2"
         	android:layout_width="match_parent"
         	android:layout_height="wrap_content"
-       		android:text="韭菜炒蛋          " />
+       		android:text="油焖茄子盖浇饭" />
     	<TextView 
     	    android:id="@+id/price2"
     	    android:text="10" />
@@ -50,6 +50,665 @@
 		
     	</TableRow>
 
+           <TableRow
+               android:id="@+id/tableRow3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="香菇青菜盖浇饭" />
+
+               <TextView
+                   android:id="@+id/price3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="9" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+
+           <TableRow
+               android:id="@+id/tableRow4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="青椒土豆丝盖浇饭" />
+
+               <TextView
+                   android:id="@+id/price4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="8" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+
+           <TableRow
+               android:id="@+id/tableRow5"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="青椒炒蛋盖浇饭" />
+
+               <TextView
+                   android:id="@+id/price5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="8" />
+
+               <TextView
+     
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+	<TableRow
+               android:id="@+id/tableRow6"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox6"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="番茄炒蛋盖浇饭" />
+
+               <TextView
+                   android:id="@+id/price6"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="9" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+<TableRow
+               android:id="@+id/tableRow7"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox7"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="手撕包菜盖浇饭" />
+
+               <TextView
+                   android:id="@+id/price7"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="8" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+<TableRow
+               android:id="@+id/tableRow8"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox8"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="芹菜肉丝盖浇饭" />
+
+               <TextView
+                   android:id="@+id/price8"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="12" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+<TableRow
+               android:id="@+id/tableRow9"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox9"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="青椒肉丝盖浇饭" />
+
+               <TextView
+                   android:id="@+id/price9"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="10" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+	<TableRow
+               android:id="@+id/tableRow10"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox10"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="蒜苔炒肉盖浇饭" />
+
+               <TextView
+                   android:id="@+id/price10"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="12" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+           <TableRow
+               android:id="@+id/tableRow11"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox11"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="香菇肉丝盖浇饭" />
+
+               <TextView
+                   android:id="@+id/price11"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="12" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+                      <TableRow
+               android:id="@+id/tableRow12"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox12"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="地三鲜盖浇饭" />
+
+               <TextView
+                   android:id="@+id/price12"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="8" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+                   
+                      <TableRow
+               android:id="@+id/tableRow13"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox13"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="青椒丝茄子丝盖浇饭" />
+
+               <TextView
+                   android:id="@+id/price13"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="8" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+           <TableRow
+               android:id="@+id/tableRow14"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox14"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="豆角茄子盖浇饭" />
+
+               <TextView
+                   android:id="@+id/price14"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="8" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+                      <TableRow
+               android:id="@+id/tableRow15"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox15"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="洋葱炒蛋盖浇饭" />
+
+               <TextView
+                   android:id="@+id/price15"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="8" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+                     
+           <TableRow
+               android:id="@+id/tableRow16"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox16"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="紫菜蛋汤" />
+
+               <TextView
+                   android:id="@+id/price16"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="6" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+           <TableRow
+               android:id="@+id/tableRow17"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox17"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="丝瓜蛋汤" />
+
+               <TextView
+                   android:id="@+id/price17"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="6" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+                      <TableRow
+               android:id="@+id/tableRow18"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox18"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="番茄蛋汤" />
+
+               <TextView
+                   android:id="@+id/price18"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="6" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+           <TableRow
+               android:id="@+id/tableRow19"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox19"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="青菜豆腐汤" />
+
+               <TextView
+                   android:id="@+id/price19"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="6" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+           <TableRow
+               android:id="@+id/tableRow20"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox20"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="辣子鸡" />
+
+               <TextView
+                   android:id="@+id/price20"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="16" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+           
+                      <TableRow
+               android:id="@+id/tableRow21"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox21"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="川味小炒肉" />
+
+               <TextView
+                   android:id="@+id/price21"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="16" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+           
+                    
+           
+           <TableRow
+               android:id="@+id/tableRow22"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox22"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="麻婆豆腐" />
+
+               <TextView
+                   android:id="@+id/price22"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="8" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+           
+           <TableRow
+               android:id="@+id/tableRow23"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox23"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="鱼香肉丝" />
+
+               <TextView
+                   android:id="@+id/price23"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="12" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+                      <TableRow
+               android:id="@+id/tableRow24"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox24"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="宫爆鸡丁" />
+
+               <TextView
+                   android:id="@+id/price24"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="12" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+                     
+                      <TableRow
+               android:id="@+id/tableRow25"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox25"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="小炒鸡杂" />
+
+               <TextView
+                   android:id="@+id/price25"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="12" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+           
+                                 <TableRow
+               android:id="@+id/tableRow26"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox26"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="葱花跑蛋 " />
+
+               <TextView
+                   android:id="@+id/price26"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="10" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+           <TableRow
+               android:id="@+id/tableRow26"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox26"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="韭菜炒蛋" />
+
+               <TextView
+                   android:id="@+id/price26"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="8" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+                      <TableRow
+               android:id="@+id/tableRow27"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox27"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="韭黄炒蛋" />
+
+               <TextView
+                   android:id="@+id/price27"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="8" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
+                                 <TableRow
+               android:id="@+id/tableRow27"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <CheckBox
+                   android:id="@+id/checkBox27"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="回锅肉" />
+
+               <TextView
+                   android:id="@+id/price27"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="18" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="元" />
+
+           </TableRow>
     	<Button
         	android:id="@+id/button1"
         	android:layout_width="wrap_content"

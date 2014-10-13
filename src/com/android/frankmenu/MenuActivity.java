@@ -18,46 +18,40 @@ public class MenuActivity extends Activity{
 	private SelecedMenu selecedmenu[];
 	private Message msg;
 	private String user_info;
-	private String output;
+	private boolean flag[];
 	private TextView price[];
 	private int number;
 	private Activity context;
+	private int checkbox_base;
+	private int price_base;
 	public void initView(){
-		   menu[0] = (CheckBox)findViewById(R.id.checkBox1);
-		   menu[1] = (CheckBox)findViewById(R.id.checkBox2);
-		   price[0] = (TextView)findViewById(R.id.price1);
-		   price[1] = (TextView)findViewById(R.id.price2);
+		   checkbox_base = R.id.checkBox1;
+		   price_base = R.id.price1;
+		   int i = 0;
+		   for (i = 0; i < 27; i++){
+		   menu[i] = (CheckBox)findViewById(checkbox_base + 3*i);
+		   price[i] = (TextView)findViewById(price_base+3*i);
+		   menu[i].setOnCheckedChangeListener(new select());
+		   }
 		   sendbutton = (Button)findViewById(R.id.button1);
-		   menu[0].setOnCheckedChangeListener(new select());
-		   menu[1].setOnCheckedChangeListener(new select());
 	}
 	private class select implements CompoundButton.OnCheckedChangeListener{
          @Override
          public void onCheckedChanged(CompoundButton buttonView,
                  boolean isChecked) {
-        	 switch(buttonView.getId()){
-             // TODO Auto-generated method stub
-        	 case R.id.checkBox1:	
-        		 if(isChecked){
-             		selecedmenu[0] = new SelecedMenu((String)menu[0].getText(),
-             				Integer.parseInt((String)price[0].getText()));
-             		number++;
-             	}else{
-             		selecedmenu[0] = new SelecedMenu();
-             		number--;
-             	}
-        		 break;
-        	 case R.id.checkBox2:
-        		 if(isChecked){
-              		selecedmenu[1] = new SelecedMenu((String)menu[1].getText(),
-              				Integer.parseInt((String)price[1].getText()));
-              		number++;
-              	}else{
-              		selecedmenu[1] = new SelecedMenu();
-              		number--;
-              	}
-         		 break;
-        	 }
+        	 int i = 0;
+        	for(i = 0;i < 27; i++){
+        		if(buttonView.getId() == (checkbox_base + 3*i))
+        		{
+        			if (isChecked){
+        				flag[i] = true;
+        				number++;
+        			} else {
+        				flag[i] = false;
+        				number--;
+        			}
+        		}
+        	}
          }
      }; 
 	private void get_user_data(){
@@ -74,16 +68,15 @@ public class MenuActivity extends Activity{
 		   menu = new CheckBox[100];
 		   selecedmenu = new SelecedMenu[100];
 		   price = new TextView[100];
+		   flag = new boolean[100];
 		   context = this;
 		   initView();
 		   get_user_data();
 		   number = 0;
 		   selecedmenu[0] = new SelecedMenu();
 		   selecedmenu[1] = new SelecedMenu();
-		   msg = new Message("13141048947");
-		   get_user_data();
+		   msg = new Message("15000530652");
 		   sendbutton.setOnClickListener(new View.OnClickListener(){
-
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
@@ -93,7 +86,14 @@ public class MenuActivity extends Activity{
 					toast.show(); //请选择菜品
 				}
 				else{
-					output = user_info + selecedmenu[0].toString() + selecedmenu[1].toString();
+					int i = 0;
+					String output = "";
+					output += user_info + "\n";
+					for(i = 0;i < 27;i++){
+						if(flag[i] == true){
+							output += menu[i].getText().toString() + "\n";
+						}
+					}
 					Toast toast = Toast.makeText(getApplicationContext(),
 							output, Toast.LENGTH_SHORT); 
 					toast.show(); 
