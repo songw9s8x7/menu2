@@ -1,8 +1,12 @@
 package com.android.frankmenu;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -24,6 +28,7 @@ public class MenuActivity extends Activity{
 	private Activity context;
 	private int checkbox_base;
 	private int price_base;
+	private TextView Dialog_text;
 	public void initView(){
 		   checkbox_base = R.id.checkBox1;
 		   price_base = R.id.price1;
@@ -94,11 +99,37 @@ public class MenuActivity extends Activity{
 							output += menu[i].getText().toString() + "\n";
 						}
 					}
-					Toast toast = Toast.makeText(getApplicationContext(),
-							output, Toast.LENGTH_SHORT); 
-					toast.show(); 
-					//发送信息
-					//msg.sendMessage(output, context);
+				
+					Dialog alertDialog = new AlertDialog.Builder(context). 
+			                setTitle("点菜清单"). 
+			                setIcon(R.drawable.ic_launcher). 
+			                setMessage(output). 
+			                setPositiveButton("确认", 
+			                		new DialogInterface.OnClickListener(){
+
+										@Override
+										public void onClick(
+												DialogInterface dialog,
+												int which) {
+											// TODO Auto-generated method stub
+											//发送信息
+											//msg.sendMessage(output, context);
+										
+										}
+			                	
+			                }).
+			                setNegativeButton("取消",
+			                		new DialogInterface.OnClickListener(){
+
+										@Override
+										public void onClick(
+												DialogInterface dialog,
+												int which) {
+											// TODO Auto-generated method stub
+											
+										}}).create();
+					 alertDialog.show(); 
+		
 				}
 			}
 			   
