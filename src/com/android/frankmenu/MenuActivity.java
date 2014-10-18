@@ -93,13 +93,16 @@ public class MenuActivity extends Activity{
 				else{
 					int i = 0;
 					String output = "";
+					int total_money = 0;
 					output += user_info + "\n";
 					for(i = 0;i < 27;i++){
 						if(flag[i] == true){
-							output += menu[i].getText().toString() + "\n";
+							total_money += Integer.parseInt(price[i].getText().toString());
+							output += menu[i].getText().toString() + price[i].getText().toString() + 
+										"\n";
 						}
 					}
-				
+					output += "总计为" + total_money;
 					Dialog alertDialog = new AlertDialog.Builder(context). 
 			                setTitle("点菜清单"). 
 			                setIcon(R.drawable.ic_launcher). 
